@@ -1,0 +1,9 @@
+.card {
+  width: 5rem;
+  height: 4rem;
+  background-color: darkorange;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
