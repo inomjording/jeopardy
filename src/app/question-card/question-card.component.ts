@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./question-card.component.css']
 })
 export class QuestionCardComponent implements OnInit {
-  question: string = '';
+  @Input() question: string = '';
+  @Input() answer: string = '';
   @Input() points: number | undefined;
 
 
@@ -14,3 +15,5 @@ export class QuestionCardComponent implements OnInit {
 
   }
 }
+
+export type cardState = 'idle' | 'question' | 'answer' | 'invisible' ;
